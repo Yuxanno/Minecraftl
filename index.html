@@ -12,7 +12,7 @@
             background-color: black;
             color: white;
             text-align: center;
-            width: 93.5%;
+            width: 90%;
             padding: 50px;
             border: solid 4px green;
             top: 355px;
@@ -29,7 +29,7 @@
     .menu{
         position: absolute;
         top: 324px;
-        left: 750px;
+        left: 500px;
     }
     a{
         padding: 5px;
@@ -73,12 +73,22 @@
           .drop:hover .b{
             display: block;
           }
-        .b{
+          .dropContent{
             display: none;
-            list-style: none;
-            position: relative;
-            right: 40px;
-            width: 100%;
+            position: absolute;
+            left: 291px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .dropContent a{
+            text-decoration: none;
+            padding: 5px 0;
+            color: white;
+            display: block;
+            background-color: green;
+            transition: 1s;
+            color: greenyellow;
             z-index: 1;
         }
         li{
@@ -89,6 +99,23 @@
         position: absolute;
         top: 0px;
         }
+        
+
+
+        @media only screen and (max-width: 550px) {
+            .menu{
+                position: absolute;
+                top: 324px;
+                left: 90px;
+            }
+            .content{
+                width: 76.5%;
+            }
+        }
+
+
+        
+        
     </style>
 </head>
 <body>
@@ -101,7 +128,7 @@
 
         <ul class="n"></ul>
        <li class="drop"><a href="">Язык</a>
-        <ul class="b">
+        <ul id="drop" class="dropContent">
             <li><a href="#">ENG</a></li>
             <li><a href="#">RUS</a></li>
             <li><a href="#">UZB</a></li>
@@ -130,5 +157,9 @@
             
 
     </div>
+
+
+
+    
 </body>
 </html>

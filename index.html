@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft</title>
-    <style>
+ 
+ 
 
         .content{
-
             position: absolute;
             background-color: black;
             color: white;
             text-align: center;
-            width: 94%;
+            width: 90%;
             padding: 50px;
             border: solid 4px green;
             top: 355px;
         }
+
 
         .shapka{
         background-image:url(minecraft-jackplex.jpg);
@@ -29,9 +30,9 @@
     .menu{
         position: absolute;
         top: 324px;
+        left: 500px;
         width: 100%;
         text-align: center;
-        
     }
     a{
         padding: 5px;
@@ -75,8 +76,24 @@
           .drop:hover .b{
             display: block;
           }
-        .b{
+          .dropContent{
             display: none;
+
+            position: absolute;
+            left: 291px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .dropContent a{
+            text-decoration: none;
+            padding: 5px 0;
+            color: white;
+            display: block;
+            background-color: green;
+            transition: 1s;
+            color: greenyellow;
+
             list-style: none;
             position: relative;
             right: 40px;
@@ -92,6 +109,23 @@
         top: 0px;
         z-index: 1;
         }
+        
+
+
+        @media only screen and (max-width: 550px) {
+            .menu{
+                position: absolute;
+                top: 324px;
+                left: 90px;
+            }
+            .content{
+                width: 76.5%;
+            }
+        }
+
+
+        
+        
     </style>
 </head>
 <body>
@@ -102,6 +136,11 @@
         <a href="https://minecraft-inside.ru/seeds/">Сиды</a>
         <a href="https://minecraft-inside.ru/minecraft/">Версии</a>
 
+
+        <ul class="n"></ul>
+       <li class="drop"><a href="">Язык</a>
+        <ul id="drop" class="dropContent">
+        
         <ul style="border: 2px solid red;" class="n"></ul>
        <li class="drop"><a href="" style="border:  2px solid blue ;">Язык</a>
         <ul class="b">
@@ -114,6 +153,7 @@
     <div style="border: 2px solid red;" class="content">
     <!--Content-->
   <h1> Что такое Майнкрафт?</h1>
+
     <p>Minecraft - это компьютерная игра жанра песочницы и приключений! Вы можете создать своего уникального персонажа, придумать уникальное имя, и создать свой мир.
         Причём Вы можете выбрать для мира игровой режим.
         
@@ -127,6 +167,8 @@
 
 
 
+
+
         <div class="info">
             <!--info-->
 
@@ -135,5 +177,9 @@
             
 
     </div>
+
+
+
+    
 </body>
 </html>

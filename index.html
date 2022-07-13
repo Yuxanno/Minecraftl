@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft</title>
-    <style>
+ 
+ 
 
-       .content{
+        .content{
             position: absolute;
             background-color: black;
             color: white;
@@ -30,6 +31,8 @@
         position: absolute;
         top: 324px;
         left: 500px;
+        width: 100%;
+        text-align: center;
     }
     a{
         padding: 5px;
@@ -75,6 +78,7 @@
           }
           .dropContent{
             display: none;
+
             position: absolute;
             left: 291px;
             width: 100px;
@@ -89,6 +93,11 @@
             background-color: green;
             transition: 1s;
             color: greenyellow;
+
+            list-style: none;
+            position: relative;
+            right: 40px;
+            width: 100%;
             z-index: 1;
         }
         li{
@@ -96,8 +105,9 @@
         }
         .drop{
         left: 260px;
-        position: absolute;
+        position: relative;
         top: 0px;
+        z-index: 1;
         }
         
 
@@ -119,25 +129,31 @@
     </style>
 </head>
 <body>
-    <div class="shapka"></div>
-    <div class="menu">
+    <div style="border: 2px solid red;" class="shapka"></div>
+    <div style="border: 2px solid red;" class="menu">
         <a href="https://minecraft-inside.ru/mods/" target="_blank">Моды</a>
         <a href="https://minecraft-inside.ru/tag/Шейдеры%20для%20Minecraft/" target="_blank">Шейдеры</a>
         <a href="https://minecraft-inside.ru/seeds/">Сиды</a>
         <a href="https://minecraft-inside.ru/minecraft/">Версии</a>
 
+
         <ul class="n"></ul>
        <li class="drop"><a href="">Язык</a>
         <ul id="drop" class="dropContent">
+        
+        <ul style="border: 2px solid red;" class="n"></ul>
+       <li class="drop"><a href="" style="border:  2px solid blue ;">Язык</a>
+        <ul class="b">
             <li><a href="#">ENG</a></li>
             <li><a href="#">RUS</a></li>
             <li><a href="#">UZB</a></li>
         </ul>
        </li>
     </div>
-    <div class="content">
+    <div style="border: 2px solid red;" class="content">
     <!--Content-->
-   <h1> Что такое Майнкрафт?</h1>
+  <h1> Что такое Майнкрафт?</h1>
+
     <p>Minecraft - это компьютерная игра жанра песочницы и приключений! Вы можете создать своего уникального персонажа, придумать уникальное имя, и создать свой мир.
         Причём Вы можете выбрать для мира игровой режим.
         
@@ -148,6 +164,10 @@
 
 
         Вы можете играть с друзьями, просто откройте мир для сети!</p> 
+
+
+
+
 
         <div class="info">
             <!--info-->

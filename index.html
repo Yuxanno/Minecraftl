@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft</title>
     <style>
+
         .content{
+
             position: absolute;
             background-color: black;
             color: white;
@@ -16,6 +18,7 @@
             border: solid 4px green;
             top: 355px;
         }
+
         .shapka{
         background-image:url(minecraft-jackplex.jpg);
         background-size: 100% 100%;
@@ -26,7 +29,9 @@
     .menu{
         position: absolute;
         top: 324px;
-        left: 750px;
+        width: 100%;
+        text-align: center;
+        
     }
     a{
         padding: 5px;
@@ -34,13 +39,15 @@
         color: rgb(9, 86, 9);
         border: 1px solid green;
         border-radius: 10%;
-       
+        background-color: greenyellow;
     }
 
     a:hover{
-        background-color: brown;
+        background-color: green;
         transition: 1s;
+        color: greenyellow;
     }
+
 
         body{
             background-image: url('1617581698_1-p-fon-dlya-mainkrafta-1.jpg');
@@ -63,6 +70,7 @@
               width: 100%;
               display: inline-block;
              font-size: 20px;
+             bottom: 1000px;
           }
           .drop:hover .b{
             display: block;
@@ -73,37 +81,54 @@
             position: relative;
             right: 40px;
             width: 100%;
+            z-index: 1;
         }
         li{
             list-style: none;
         }
         .drop{
         left: 260px;
-        position: absolute;
+        position: relative;
         top: 0px;
+        z-index: 1;
+        }
+        .log{
+            position: absolute;
+            left: 1805px;
+            top: 28px;
+        }
+        .vhod{
+            position: absolute;
+            left: 1755px;
+            top: 28px;
         }
     </style>
 </head>
 <body>
-    <div class="shapka"></div>
-    <div class="menu">
-        <a href="https://minecraft-inside.ru/mods/" target="_blank">Моды</a>
-        <a href="https://minecraft-inside.ru/tag/Шейдеры%20для%20Minecraft/" target="_blank">Шейдеры</a>
-        <a href="https://minecraft-inside.ru/seeds/">Сиды</a>
-        <a href="https://minecraft-inside.ru/minecraft/">Версии</a>
+    <div style="border: 2px solid red;" class="shapka"></div>
+        <div style="border: 2px solid red;" class="menu">
+            <a href="https://minecraft-inside.ru/mods/" target="_blank">Моды</a>
+            <a href="https://minecraft-inside.ru/tag/Шейдеры%20для%20Minecraft/" target="_blank">Шейдеры</a>
+            <a href="https://minecraft-inside.ru/seeds/">Сиды</a>
+            <a href="https://minecraft-inside.ru/minecraft/">Версии</a>
 
-        <ul class="n"></ul>
-       <li class="drop"><a href="">Язык</a>
+        <ul style="border: 2px solid red;" class="n"></ul>
+            <li class="drop"><a href="" style="border:  2px solid blue ;">Язык</a>
         <ul class="b">
-            <li><a href="#">ENG</a></li>
-            <li><a href="#">RUS</a></li>
-            <li><a href="#">UZB</a></li>
+            <li><a href="">ENG</a></li>
+            <li><a href="">UZB</a></li>
         </ul>
        </li>
     </div>
-<div class="content">
+    <div class="log">
+        <a href="D:\Halimjon\git practica\regrus.html">Регистрация</a>
+    </div>
+    <div class="vhod">
+        <a href="D:\Halimjon\git practica\logrus.html">Вход</a>
+    </div>
+    <div style="border: 2px solid red;" class="content">
     <!--Content-->
-   <!-- <h1> Что такое Майнкрафт?</h1>
+  <h1> Что такое Майнкрафт?</h1>
     <p>Minecraft - это компьютерная игра жанра песочницы и приключений! Вы можете создать своего уникального персонажа, придумать уникальное имя, и создать свой мир.
         Причём Вы можете выбрать для мира игровой режим.
         
@@ -111,7 +136,19 @@
         
         Также Вы можете выбрать сложность. Сложность по умолчанию - нормально. На такой сложности враждебные мобы будут наносить средний урон, как и здоровье живых существ (не считая Вас). Также есть - мирно, там мобы Вас не атакуют, а здоровье восстанавливается, даже когда Вы голодны. Есть легко. Там у других существ мало здоровья, и наносят они мало. Есть сложно, там у живых существ много здоровья, и наносят они много. Есть хардкор - там, если Вы умрёте, то останетесь призраком всегда.
         
-        Вы можете играть с друзьями, просто откройте мир для сети!</p>--> 
+
+
+        Вы можете играть с друзьями, просто откройте мир для сети!</p> 
+
+
+
+        <div class="info">
+            <!--info-->
+
+
+        </div>
+            
+
     </div>
 </body>
 </html>

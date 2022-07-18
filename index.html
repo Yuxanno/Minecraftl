@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft</title>
- 
     <style>
-
         .content{
             position: absolute;
             background-color: black;
@@ -18,7 +16,6 @@
             border: solid 4px green;
             top: 355px;
         }
-
         .info{
             position: absolute;
             background-color: black;
@@ -29,15 +26,12 @@
             border: solid 4px green;
             top: 700px;
         }
-
-
         .shapka{
         background-image:url(minecraft-jackplex.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         padding: 150px;
     }
-
     .menu{
         position: absolute;
         top: 324px;
@@ -55,14 +49,11 @@
         border-radius: 10%;
         background-color: greenyellow;
     }
-
     a:hover{
         background-color: green;
         transition: 1s;
         color: greenyellow;
     }
-
-
         body{
             background-image: url('1617581698_1-p-fon-dlya-mainkrafta-1.jpg');
             background-repeat: no-repeat;
@@ -71,7 +62,7 @@
             background-attachment: fixed;
         }
             
-    .n{
+        .n{
             text-align: center;
             padding: 0;
             list-style: none;
@@ -98,7 +89,6 @@
             width: 100px;
             text-align: center;
         }
-
         .dropContent a{
             text-decoration: none;
             padding: 5px 0;
@@ -114,17 +104,14 @@
             width: 100%;
             z-index: 1;
         }
-    
         li{
             list-style: none;
         }
-    
         .drop{
         left: 260px;
         position: relative;
         top: 0px;
         z-index: 1;
-
         }
         .log{
             position: absolute;
@@ -139,8 +126,8 @@
        /***********************************************************************************************/
        .logrus{
             background-color: white;
-            width: 25%;
-            height: 280px;
+            width: 30%;
+            height: 380px;
             margin-top: 280px;
             background-image: url("5a798e63e4d3de1692f7b9b629fc6761.jpg");
             background-size: 100% 100%;
@@ -149,7 +136,6 @@
             position: absolute;
             left: 640px;
             z-index: 1;
-            display: none;
             border: 5px solid red;
         }
         .h1{
@@ -161,28 +147,31 @@
             text-decoration: none;
             color: green;
             font-size: 30px;
-            left: 180px;
+            left: 250px;
             background-color: greenyellow;
             border: 1px solid green;
             border-radius: 7%;
+            margin-top: 20px;
         }
         a:hover{
-        background-color: green;
-        transition: 1s;
-        color: greenyellow;
+            background-color: green;
+            transition: 1s;
+            color: greenyellow;
+    }
+    input{
+        width: 40%;
+        padding: 5px;
     }
     </style>
 </head>
 <body>
     <div id="hod" class="logrus">
-        <h1 class="h1">Войти</h1>
-        <h1 style="color:rgb(100, 112, 10);">Email :</h1>
-        <h1 style="color:rgb(175, 137, 55);">Пароль :</h1>
-
+        <h1 class="h1">Войти</h1><br>
+        <h1 style="color:rgb(100, 112, 10);">Email : <input type="email"></h1><br>
+        <h1 style="color:rgb(175, 137, 55);">Пароль : <input type="password"></h1>
         <a href="" class="log2">Войти</a>
     </div>
     <div  class="shapka"></div>
-
     <div  class="menu">
         <a href="https://minecraft-inside.ru/mods/" target="_blank">Моды</a>
         <a href="https://minecraft-inside.ru/tag/Шейдеры%20для%20Minecraft/" target="_blank">Шейдеры</a>
@@ -190,60 +179,36 @@
         <a href="https://minecraft-inside.ru/minecraft/" target="_blank">Версии</a>
         <a href="">Язык</a>
     </div>
-
-
     <div class="log">
         <a href="">Регистрация</a>
     </div>
     <div class="vhod">
-        <a href="" onclick="myfunction()" >Вход</a>
+        <a style="border: 2px solid red;" href="" onclick="myfunction()" >Вход</a>
     </div>
-
   <div class="content">
     <!--Content-->
   <h1> Что такое Майнкрафт?</h1>
-
-
-    <p>Minecraft - это компьютерная игра жанра песочницы и приключений! Вы можете создать своего уникального персонажа, придумать уникальное имя, и создать свой мир.
+    <p>
+        Minecraft - это компьютерная игра жанра песочницы и приключений! Вы можете создать своего уникального персонажа, придумать уникальное имя, и создать свой мир.
         Причём Вы можете выбрать для мира игровой режим.
-        
         Есть выживание, оно по умолчанию - там у Вас есть здоровье и голод, от чего Вы можете умереть. Есть приключение - тоже, что выживание, но Вы не можете строить и ломать. Есть творческий - там Вы бессмертны, а в инвентаре у Вас бесконечные материалы, но Вы не можете получать достижения.
-        
         Также Вы можете выбрать сложность. Сложность по умолчанию - нормально. На такой сложности враждебные мобы будут наносить средний урон, как и здоровье живых существ (не считая Вас). Также есть - мирно, там мобы Вас не атакуют, а здоровье восстанавливается, даже когда Вы голодны. Есть легко. Там у других существ мало здоровья, и наносят они мало. Есть сложно, там у живых существ много здоровья, и наносят они много. Есть хардкор - там, если Вы умрёте, то останетесь призраком всегда.
-        
-
-
-        Вы можете играть с друзьями, просто откройте мир для сети!</p> 
-
-
-
+        Вы можете играть с друзьями, просто откройте мир для сети!
+    </p> 
 </div>
-
-
         <div class="info">
             <!--info-->
             <div class="info1">
                 <h1>Хотите скачать Майнкрафт?<br>
                 нажимайте на кнопки ниже и устанавливайте!</h1>
             </div>
-
             <h3>Скачать Майнкрафт</h3>
             <h3>Скачать Java для майнкрафта</h3>
-
         </div>
-
         <script>
-            function myfunction()
-            {
-                document.getElementById("hod").style.display="block";
+            function myfunction(){
+                document.getElementById("hod").style.display = "block";
             }
         </script>
-            
-
-    
-
-
-
-    
 </body>
 </html>

@@ -124,11 +124,63 @@
         position: relative;
         top: 0px;
         z-index: 1;
-        }       
-        
+
+        }
+        .log{
+            position: absolute;
+            left: 1805px;
+            top: 28px;
+        }
+        .vhod{
+            position: absolute;
+            left: 1755px;
+            top: 28px;
+        }
+       /***********************************************************************************************/
+       .logrus{
+            background-color: white;
+            width: 25%;
+            height: 280px;
+            margin-top: 280px;
+            background-image: url("5a798e63e4d3de1692f7b9b629fc6761.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-color: gray;
+            position: absolute;
+            left: 640px;
+            z-index: 1;
+            display: none;
+            border: 5px solid red;
+        }
+        .h1{
+            text-align: center;
+            color: green;
+        }
+        .log2{
+            position: absolute;
+            text-decoration: none;
+            color: green;
+            font-size: 30px;
+            left: 180px;
+            background-color: greenyellow;
+            border: 1px solid green;
+            border-radius: 7%;
+        }
+        a:hover{
+        background-color: green;
+        transition: 1s;
+        color: greenyellow;
+    }
     </style>
 </head>
 <body>
+    <div id="hod" class="logrus">
+        <h1 class="h1">Войти</h1>
+        <h1 style="color:rgb(100, 112, 10);">Email :</h1>
+        <h1 style="color:rgb(175, 137, 55);">Пароль :</h1>
+
+        <a href="" class="log2">Войти</a>
+    </div>
     <div  class="shapka"></div>
 
     <div  class="menu">
@@ -140,6 +192,12 @@
     </div>
 
 
+    <div class="log">
+        <a href="">Регистрация</a>
+    </div>
+    <div class="vhod">
+        <a href="" onclick="myfunction()" >Вход</a>
+    </div>
 
   <div class="content">
     <!--Content-->
@@ -173,6 +231,13 @@
             <h3>Скачать Java для майнкрафта</h3>
 
         </div>
+
+        <script>
+            function myfunction()
+            {
+                document.getElementById("hod").style.display="block";
+            }
+        </script>
             
 
     

@@ -7,39 +7,36 @@
     <title>Minecraft</title>
     <style>
         .content{
-            position: absolute;
             background-color: black;
             color: white;
             text-align: center;
             width: 93.5%;
             padding: 50px;
             border: solid 4px green;
-            top: 355px;
+            margin-top: 80px;
         }
         .info{
-            position: absolute;
             background-color: black;
             color: white;
             text-align: center;
             width: 93.5%;
             padding: 50px;
             border: solid 4px green;
-            top: 700px;
+            margin-top: 50px;
         }
         .shapka{
         background-image:url(minecraft-jackplex.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        padding: 150px;
+        padding: 250px;
+        width: 73%;
+        border: 3px solid red;
     }
     .menu{
-        position: absolute;
-        top: 324px;
         width: 100%;
         text-align: center;
-        left: 5px;
-        width: 100%;
-        text-align: center;
+        z-index: 1;
+        margin-top: 50px;
     }
     a{
         padding: 5px;
@@ -59,6 +56,7 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             height: 930px;
+            width: 100%;
             background-attachment: fixed;
         }
             
@@ -137,6 +135,16 @@
             left: 640px;
             z-index: 1;
             border: 5px solid red;
+            display: none;
+            animation: bloc 1s linear forwards;
+        }
+        @keyframes bloc {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
         }
         .h1{
             text-align: center;
@@ -157,15 +165,30 @@
             background-color: green;
             transition: 1s;
             color: greenyellow;
-    }
-    input{
-        width: 40%;
-        padding: 5px;
-    }
+        }
+        input{
+            width: 40%;
+            padding: 5px;
+        }
+        .logrus span{
+            position: absolute;
+            right: 0;
+            font-size: 30px;
+            background-color: greenyellow;
+            cursor: pointer;
+            color: green;
+            transition: all 1s;
+            border-radius: 7%;
+        }
+        .logrus span:hover{
+            background-color: green;
+            color: red;
+        }
     </style>
 </head>
 <body>
     <div id="hod" class="logrus">
+        <span onclick="disNone()">X</span>
         <h1 class="h1">Войти</h1><br>
         <h1 style="color:rgb(100, 112, 10);">Email : <input type="email"></h1><br>
         <h1 style="color:rgb(175, 137, 55);">Пароль : <input type="password"></h1>
@@ -177,13 +200,13 @@
         <a href="https://minecraft-inside.ru/tag/Шейдеры%20для%20Minecraft/" target="_blank">Шейдеры</a>
         <a href="https://minecraft-inside.ru/seeds/" target="_blank">Сиды</a>
         <a href="https://minecraft-inside.ru/minecraft/" target="_blank">Версии</a>
-        <a href="">Язык</a>
+        <a>Язык</a>
     </div>
     <div class="log">
         <a href="">Регистрация</a>
     </div>
     <div class="vhod">
-        <a style="border: 2px solid red;" href="" onclick="myfunction()" >Вход</a>
+        <a style="cursor: pointer;" onclick="myfunction()" >Вход</a>
     </div>
   <div class="content">
     <!--Content-->
@@ -205,10 +228,6 @@
             <h3>Скачать Майнкрафт</h3>
             <h3>Скачать Java для майнкрафта</h3>
         </div>
-        <script>
-            function myfunction(){
-                document.getElementById("hod").style.display = "block";
-            }
-        </script>
+        <script src="script.js"></script>
 </body>
 </html>

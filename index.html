@@ -13,7 +13,7 @@
             width: 93.5%;
             padding: 50px;
             border: solid 4px green;
-            margin-top: 80px;
+            margin-top: 55px;
         }
         .info{
             background-color: black;
@@ -21,7 +21,6 @@
             text-align: center;
             width: 93.5%;
             padding: 50px;
-            border: solid 4px green;
             margin-top: 50px;
         }
         .shapka{
@@ -30,13 +29,12 @@
         background-repeat: no-repeat;
         padding: 250px;
         width: 73%;
-        border: 3px solid red;
     }
     .menu{
         width: 100%;
         text-align: center;
         z-index: 1;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     a{
         padding: 5px;
@@ -46,6 +44,12 @@
         border-radius: 10%;
         background-color: greenyellow;
     }
+
+    .infoword{
+        color: aqua;
+    }
+
+
     a:hover{
         background-color: green;
         transition: 1s;
@@ -105,6 +109,45 @@
         li{
             list-style: none;
         }
+
+        .infodowland{
+            display: none;
+            background-color: white;
+            width: 30%;
+            height: 380px;
+            margin-top: 480px;
+            background-image: url("5a798e63e4d3de1692f7b9b629fc6761.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-color: gray;
+            position: absolute;
+            left: 640px;
+            z-index: 1;
+            border: 5px solid red;
+            animation: bloc 1s linear forwards;
+
+        }
+
+        .infodowland:hover{
+            display: block;
+        }
+
+        .infodowland span:hover{
+            background-color: green;
+            color: red;
+        }
+
+        .infodowland span{
+            position: absolute;
+            right: 0;
+            font-size: 30px;
+            background-color: greenyellow;
+            cursor: pointer;
+            color: green;
+            transition: all 1s;
+            border-radius: 7%;
+        }
+
         .drop{
         left: 260px;
         position: relative;
@@ -252,7 +295,7 @@
 </head>
 <body>
     <div id="hod" class="logrus">
-        <span onclick="disNone()">X</span>
+        <span onclick="disNone()">х</span>
         <h1 class="h1">Войти</h1><br>
         <h1 style="color:rgb(100, 112, 10); user-select: none;">Email : <input type="email"></h1><br>
         <h1 style="color:rgb(175, 137, 55); user-select: none;">Пароль : <input type="password"></h1>
@@ -295,11 +338,24 @@
         <div class="info">
             <!--info-->
             <div class="info1">
-                <h1>Хотите скачать Майнкрафт?<br>
+                <h1 class="infoword">Хотите скачать Майнкрафт?<br>
                 нажимайте на кнопки ниже и устанавливайте!</h1>
             </div>
-            <h3>Скачать Майнкрафт</h3>
-            <h3>Скачать Java для майнкрафта</h3>
+            <div class="info" >
+            
+                <div>
+                    <h3> <a style="cursor: pointer;" onclick="myfunction1()"> Скачать Майнкрафт</a></h3>
+                </div>
+                <h3> <a href="https://www.java.com/ru/download/manual.jsp"> Скачать Java для майнкрафта</a></h3>
+            </div>
+
+
+            <div id="infodowland" class="infodowland">
+                <span onclick="disNone1()">х</span>
+                <a href=""> windows </a>  <a href="">  mac </a>
+                
+            </div>
+
         </div>
         <script src="script.js"></script>
 </body>

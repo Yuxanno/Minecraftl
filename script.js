@@ -3,4 +3,9 @@ function myfunction(){
 }
 function disNone(){
     document.getElementById("hod").style.display = "none";
+    document.getElementById("reg").style.display = "none";
+}
+
+function regfunc(){
+    document.getElementById("reg").style.display = "block";
 }

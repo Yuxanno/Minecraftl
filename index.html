@@ -99,7 +99,6 @@
             background-color: green;
             transition: 1s;
             color: greenyellow;
-
             list-style: none;
             position: relative;
             right: 40px;
@@ -111,11 +110,10 @@
         }
 
         .infodowland{
-            display: none;
             background-color: white;
             width: 30%;
             height: 380px;
-            margin-top: 480px;
+            bottom: 50px;
             background-image: url("5a798e63e4d3de1692f7b9b629fc6761.jpg");
             background-size: 100% 100%;
             background-blend-mode: multiply;
@@ -124,17 +122,8 @@
             left: 640px;
             z-index: 1;
             border: 5px solid red;
+            display: none;
             animation: bloc 1s linear forwards;
-
-        }
-
-        .infodowland:hover{
-            display: block;
-        }
-
-        .infodowland span:hover{
-            background-color: green;
-            color: red;
         }
 
         .infodowland span{
@@ -147,6 +136,26 @@
             transition: all 1s;
             border-radius: 7%;
         }
+
+        .infodowland span:hover{
+            background-color: green;
+            color: red
+        }
+
+        .halim{
+            margin-top: 180px;
+        }
+
+        @keyframes blok {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+
+        }
+            
 
         .drop{
         left: 260px;
@@ -227,6 +236,9 @@
             background-color: green;
             color: red;
         }
+
+
+
     </style>
 </head>
 <body>
@@ -279,7 +291,9 @@
 
             <div id="infodowland" class="infodowland">
                 <span onclick="disNone1()">х</span>
-                <a href=""> windows </a>  <a href="">  mac </a>
+                <div class="halim">
+                    <a href="https://tlauncher.org/installer"> windows </a>  <a style="margin-left: 10px;" href="https://tlauncher.org/jar">  mac </a>
+                </div>
                 
             </div>
 

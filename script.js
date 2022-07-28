@@ -9,6 +9,10 @@ function regfunc(){
     document.getElementById("reg").style.display = "block";
 }
 
+function disNone2(){
+    document.getElementById("reg").style.display = "none";
+}
+
 
 
 function myfunction1(){

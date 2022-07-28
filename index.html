@@ -238,15 +238,86 @@
 
 
 
+        .regrus{
+            background-color: white;
+            width: 30%;
+            height: 480px;
+            margin-top: 280px;
+            background-image: url("5a798e63e4d3de1692f7b9b629fc6761.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-color: gray;
+            position: absolute;
+            left: 640px;
+            z-index: 1;
+            border: 5px solid red;
+            display: none;
+            animation: regrus 1s linear forwards;
+        }
+        @keyframes regrus {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        .h1{
+            text-align: center;
+            color: green;
+        }
+        .log3{
+            position: absolute;
+            text-decoration: none;
+            color: green;
+            font-size: 30px;
+            left: 250px;
+            background-color: greenyellow;
+            border: 1px solid green;
+            border-radius: 7%;
+            margin-top: 20px;
+        }
+        a:hover{
+            background-color: green;
+            transition: 1s;
+            color: greenyellow;
+        }
+        input{
+            width: 40%;
+            padding: 5px;
+        }
+        .regrus span{
+            position: absolute;
+            right: 0;
+            font-size: 30px;
+            background-color: greenyellow;
+            cursor: pointer;
+            color: green;
+            transition: all 1s;
+            border-radius: 7%;
+        }
+        .regrus span:hover{
+            background-color: green;
+            color: red;
+        }
     </style>
 </head>
 <body>
     <div id="hod" class="logrus">
         <span onclick="disNone()">х</span>
         <h1 class="h1">Войти</h1><br>
-        <h1 style="color:rgb(100, 112, 10);">Email : <input type="email"></h1><br>
-        <h1 style="color:rgb(175, 137, 55);">Пароль : <input type="password"></h1>
+        <h1 style="color:rgb(100, 112, 10); user-select: none;">Email : <input type="email"></h1><br>
+        <h1 style="color:rgb(175, 137, 55); user-select: none;">Пароль : <input type="password"></h1>
         <a href="" class="log2">Войти</a>
+    </div>
+
+    <div id="reg" class="regrus">
+        <span onclick="disNone()">X</span>
+        <h1 class="h1">Регистрация</h1><br>
+        <h1 style="color:rgb(100, 112, 10); user-select: none;">Email : <input type="email"></h1><br>
+        <h1 style="color:rgb(175, 137, 55); user-select: none;">Пароль : <input type="password"></h1>
+        <h1 style="color:rgb(175, 137, 55); user-select: none;">Повтор пароль : <input type="password"></h1>
+        <a href="" class="log3">Регистрация</a>
     </div>
     <div  class="shapka"></div>
     <div  class="menu">
@@ -257,7 +328,7 @@
         <a>Язык</a>
     </div>
     <div class="log">
-        <a href="">Регистрация</a>
+        <a style="cursor: pointer;" onclick="regfunc()">Регистрация</a>
     </div>
     <div class="vhod">
         <a style="cursor: pointer;" onclick="myfunction()" >Вход</a>
